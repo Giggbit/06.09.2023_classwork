@@ -25,8 +25,8 @@ namespace _06._09._2023_Шахматная_доска
             SolidBrush brush_2 = new SolidBrush(Color.White);
             SolidBrush brush;
 
-            for (int j = 0; j < 6; j++) {
-                for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 8; j++) {
+                for (int i = 0; i < 4; i++) {
                     g.FillRectangle(brush_1, x, y, 30, 30);
                     x += 30;
                     g.FillRectangle(brush_2, x, y, 30, 30);
@@ -43,13 +43,13 @@ namespace _06._09._2023_Шахматная_доска
             SolidBrush br_ellipse = new SolidBrush(Color.Red);
             int n = 14;
             
-            for(int i = 0; i < 6; i++) {
+            for(int i = 0; i < 8; i++) {
                 gr.FillEllipse(br_ellipse, n, 34, 20, 20);
                 n += 30;
             }
             n = 14;
-            for (int i = 0; i < 6; i++) {
-                gr.FillEllipse(br_ellipse, n, 184, 20, 20);
+            for (int i = 0; i < 8; i++) {
+                gr.FillEllipse(br_ellipse, n, 244, 20, 20);
                 n += 30;
             }
 
